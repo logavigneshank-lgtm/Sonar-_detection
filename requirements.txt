@@ -1,3 +1,5 @@
 flask
-ultralytics
 gunicorn
+numpy
+Pillow
+onnxruntime
