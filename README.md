@@ -1,6 +1,6 @@
-# Final Sonar Marine Debris Detector
+# SONAR 4-Class ONNX Detector
 
-Uses the trained YOLO model `best.pt`.
+Lightweight CPU detector for Render.
 
 Classes:
 - aircraft
@@ -8,12 +8,4 @@ Classes:
 - other
 - shipwreck
 
-The web application uses confidence threshold 0.50 to suppress weak false detections.
-
-## Local
-pip install -r requirements.txt
-python app.py
-
-## Render
-Build: pip install -r requirements.txt
-Start: gunicorn app:app
+The ONNX model is `best.onnx`. The app uses a 50% confidence threshold and class-wise NMS.
